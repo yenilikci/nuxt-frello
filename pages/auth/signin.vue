@@ -35,6 +35,7 @@
 
 <script>
 export default {
+  layout: "sign",
   data() {
     return {
       snackbar: false,
