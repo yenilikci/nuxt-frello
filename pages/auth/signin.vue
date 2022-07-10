@@ -49,7 +49,6 @@ export default {
 
   methods: {
     login() {
-      console.log('login')
       let that = this;
       this.$fire.auth
         .signInWithEmailAndPassword(this.auth.email, this.auth.password)
