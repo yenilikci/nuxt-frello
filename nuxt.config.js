@@ -33,8 +33,34 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
-
+  modules: [
+    [
+      "@nuxtjs/firebase",
+      {
+        config: {
+          apiKey: "AIzaSyBPcEwWbsmRpl5CBR2yjQCuoDTkw4UI4cQ",
+          authDomain: "frello-4030f.firebaseapp.com",
+          projectId: "frello-4030f",
+          storageBucket: "frello-4030f.appspot.com",
+          messagingSenderId: "1051542740963",
+          appId: "1:1051542740963:web:9169e83b1e923b42380ad6",
+        },
+        services: {
+          auth: {
+            persistence: "local", // default
+            initialize: {
+              onAuthStateChangedMutation: "ON_AUTH_STATE_CHANGED_MUTATION",
+              onAuthStateChangedAction: "onAuthStateChangedAction",
+              subscribeManually: false,
+            },
+            ssr: false, // default
+          },
+          firestore: true,
+          storage: true
+        },
+      },
+    ],
+  ],
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ["~/assets/variables.scss"],

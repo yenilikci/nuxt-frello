@@ -47,6 +47,20 @@ export default {
     };
   },
 
-  methods: {},
+  methods: {
+    login() {
+      let that = this;
+      this.$fire.auth
+        .signInWithEmailAndPassword(this.auth.email, this.auth.password)
+        .catch(function (error) {
+          that.snackbarText = error.message;
+          that.snackbar = true;
+        })
+        .then((user) => {
+          //we are signed in
+          $nuxt.$router.push("/");
+        });
+    },
+  },
 };
 </script>
