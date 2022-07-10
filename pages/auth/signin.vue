@@ -3,7 +3,7 @@
     <v-col cols="12" sm="8" md="4" align="center">
       <v-card class="elevation-4 text-left">
         <v-card-title class="fancy-title align-center justify-center"
-          >Jello</v-card-title
+          >Frello</v-card-title
         ><v-card-text>
           <v-form>
             <v-text-field
