@@ -1,12 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Knewave&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&display=swap');
 
 .logo {
-  font-family: "Knewave", cursive;
-  letter-spacing: 3px;
+  font-family: "Edu SA Beginner", cursive;
+  letter-spacing: 5px;
+  color: $text-color;
 }
 
 .fancy-title {
-  font-family: "Knewave", cursive;
+  font-family: "Edu SA Beginner", cursive;
   font-size: 48px;
 }
 
@@ -29,4 +30,8 @@
   .v-card__subtitle {
     font-size: 8px;
   }
+}
+
+.frello-brand {
+    font-size: 36px !important;
 }

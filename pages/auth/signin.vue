@@ -1,10 +1,8 @@
 <template>
   <v-row align="center" justify="center">
-    <v-col cols="12" sm="8" md="4" align="center">
-      <v-card class="elevation-4 text-left">
-        <v-card-title class="fancy-title align-center justify-center"
-          >Frello</v-card-title
-        ><v-card-text>
+    <v-col cols="12" sm="8" md="6" align="center">
+      <v-card class="elevation-4 text-left" >
+        <v-card-title class="fancy-title align-center justify-center frello-brand">Frello</v-card-title><v-card-text>
           <v-form>
             <v-text-field
               label="Login"
@@ -24,43 +22,55 @@
           </v-form>
         </v-card-text>
         <v-card-actions class="text-center">
-          <v-btn class="login-button" @click="login" depressed large
+          <v-btn
+            block
+            class="login-button"
+            color="yellow"
+            @click="login"
+            depressed
+            large
             >Login</v-btn
           >
         </v-card-actions>
       </v-card>
+      <v-snackbar
+        :timeout="4000"
+        v-model="snackbar"
+        absolute
+        bottom
+        center
+      >
+        {{ snackbarText }}
+      </v-snackbar>
     </v-col>
   </v-row>
 </template>
 
 <script>
 export default {
-  layout: "sign",
+  layout: 'sign',
   data() {
     return {
       snackbar: false,
-      snackbarText: "No error message",
+      snackbarText: 'No error message',
       auth: {
         email: "",
-        password: "",
-      },
-    };
+        password: ""
+      }
+    }
   },
-
   methods: {
     login() {
-      let that = this;
-      this.$fire.auth
-        .signInWithEmailAndPassword(this.auth.email, this.auth.password)
-        .catch(function (error) {
-          that.snackbarText = error.message;
-          that.snackbar = true;
-        })
-        .then((user) => {
-          //we are signed in
-          $nuxt.$router.push("/");
-        });
-    },
-  },
-};
+      let that = this
+      this.$fire.auth.signInWithEmailAndPassword(this.auth.email, this.auth.password)
+      .catch(function (error){
+        that.snackbarText = error.message
+        that.snackbar = true
+      }).then((user) => {
+        //we are signed in
+        $nuxt.$router.push('/')
+      })
+    }
+  }
+}
 </script>
