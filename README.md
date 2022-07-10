@@ -1,5 +1,13 @@
 # nuxt-frello
 
+<img width="1680" alt="Screen Shot 2022-07-10 at 19 33 21" src="https://user-images.githubusercontent.com/57464067/178153678-8963f76b-c085-428e-9639-579594fec2da.png">
+<img width="1680" alt="Screen Shot 2022-07-10 at 19 33 38" src="https://user-images.githubusercontent.com/57464067/178153677-2febb002-fa93-430d-a2ff-d012a7c2e045.png">
+<img width="1680" alt="Screen Shot 2022-07-10 at 19 34 15" src="https://user-images.githubusercontent.com/57464067/178153673-d4ea5994-0952-4b03-9732-523319db728c.png">
+<img width="1680" alt="Screen Shot 2022-07-10 at 19 34 53" src="https://user-images.githubusercontent.com/57464067/178153680-409ee2da-082b-4e0c-8157-07f0740e28fe.png">
+<img width="1680" alt="Screen Shot 2022-07-10 at 19 36 10" src="https://user-images.githubusercontent.com/57464067/178153682-d98ca191-5dcc-4f78-a261-c8e42f56d530.png">
+<img width="1680" alt="Screen Shot 2022-07-10 at 19 37 04" src="https://user-images.githubusercontent.com/57464067/178153684-a2c956c6-77c2-425a-b2ab-37c2e5c578c4.png">
+
+
 ## Build Setup
 
 ```bash
